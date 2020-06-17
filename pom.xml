@@ -15,5 +15,23 @@
       <name>snapshots</name>
       <url>http://18.217.132.105:8081/nexus/content/repositories/snapshots</url>
    </snapshotRepository> 
+    <repository>
+      <id>nexus</id>
+      <url>http://18.217.132.105:8081/nexus/content/repositories/releases</url>
+   </repository>  
   </distributionManagement>
+ <plugins>
+           <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-release-plugin</artifactId>
+                <version>3.0.0-M1</version>
+                <configuration>
+                    <autoVersionSubmodules>true</autoVersionSubmodules>
+                    <pushChanges>false</pushChanges>
+                    <localCheckout>true</localCheckout>
+                    <tagNameFormat>@{project.version}</tagNameFormat>
+                    <includeArtifactIds>webapp-runner</includeArtifactIds>
+                </configuration>
+            </plugin>
+        </plugins>  
 </project>
