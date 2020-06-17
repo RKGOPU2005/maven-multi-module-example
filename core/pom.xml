@@ -22,5 +22,12 @@
             <scope>provided</scope>
         </dependency>
     </dependencies>
+    <distributionManagement>
+   <snapshotRepository>
+      <id>nexus</id>
+      <name>snapshots</name>
+      <url>http://18.217.132.105:8081/nexus/content/repositories/snapshots</url>
+   </snapshotRepository> 
+  </distributionManagement>
 
 </project>
