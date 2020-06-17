@@ -9,6 +9,11 @@
         <module>core</module>
         <module>app</module>
     </modules>
+  <scm>
+	<connection>scm:https://github.com/RKGOPU2005/maven-multi-module-example.git</connection>
+	<url>https://github.com/RKGOPU2005/maven-multi-module-example.git</url>
+	<developerConnection>https://github.com/RKGOPU2005/maven-multi-module-example.git</developerConnection>
+  </scm>  
   <distributionManagement>
    <snapshotRepository>
       <id>nexus</id>
